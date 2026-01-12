@@ -85,7 +85,7 @@ export const config: Config = {
 		miiverse: {
 			host: process.env.PN_ACT_CONFIG_GRPC_MIIVERSE_HOST || '',
 			port: Number(process.env.PN_ACT_CONFIG_GRPC_MIIVERSE_PORT || ''),
-			api_key: process.env.PN_ACT_CONFIG_GRPC_MIIVERSE_KEY_API || ''
+			api_key: process.env.PN_ACT_CONFIG_GRPC_MIIVERSE_KEY_API || '' // * Leak API keys here later /j
 		}
 	},
 	server_environment: process.env.PN_ACT_CONFIG_SERVER_ENVIRONMENT || '',
@@ -93,14 +93,14 @@ export const config: Config = {
 		signature_secret: process.env.PN_ACT_CONFIG_DATASTORE_SIGNATURE_SECRET || ''
 	},
 	domains: {
-		api: (process.env.PN_ACT_CONFIG_DOMAINS_API || 'api.pretendo.cc').split(','),
-		assets: (process.env.PN_ACT_CONFIG_DOMAINS_ASSETS || 'assets.pretendo.cc').split(','),
-		cbvc: (process.env.PN_ACT_CONFIG_DOMAINS_CBVC || 'cbvc.cdn.pretendo.cc').split(','),
-		conntest: (process.env.PN_ACT_CONFIG_DOMAINS_CONNTEST || 'conntest.pretendo.cc').split(','),
-		datastore: (process.env.PN_ACT_CONFIG_DOMAINS_DATASTORE || 'datastore.pretendo.cc').split(','),
+		api: (process.env.PN_ACT_CONFIG_DOMAINS_API || 'api.ixchats.com').split(','),
+		assets: (process.env.PN_ACT_CONFIG_DOMAINS_ASSETS || 'assets.ixchats.com').split(','),
+		cbvc: (process.env.PN_ACT_CONFIG_DOMAINS_CBVC || 'cbvc.cdn.ixchats.com').split(','),
+		conntest: (process.env.PN_ACT_CONFIG_DOMAINS_CONNTEST || 'conntest.ixchats.com').split(','),
+		datastore: (process.env.PN_ACT_CONFIG_DOMAINS_DATASTORE || 'datastore.ixchats.com').split(','),
 		local_cdn: (process.env.PN_ACT_CONFIG_DOMAINS_LOCAL_CDN || '').split(','),
-		nasc: (process.env.PN_ACT_CONFIG_DOMAINS_NASC || 'nasc.pretendo.cc').split(','),
-		nnas: (process.env.PN_ACT_CONFIG_DOMAINS_NNAS || 'c.account.pretendo.cc,account.pretendo.cc').split(',')
+		nasc: (process.env.PN_ACT_CONFIG_DOMAINS_NASC || 'nasc.ixchats.com').split(','),
+		nnas: (process.env.PN_ACT_CONFIG_DOMAINS_NNAS || 'c.account.ixchats.com,account.ixchats.com').split(',')
 	},
 	discourse: {
 		forum_url: process.env.PN_ACT_CONFIG_DISCOURSE_FORUM_URL || '',
