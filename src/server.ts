@@ -18,7 +18,7 @@ import assets from '@/services/assets';
 import { config, disabledFeatures } from '@/config-manager';
 import { startProvisioner } from './provisioning';
 
-process.title = 'Pretendo - Account';
+process.title = 'Peamo - Account';
 process.on('uncaughtException', (err, origin) => {
 	console.log(err);
 	console.log(origin);
@@ -122,3 +122,4 @@ async function main(): Promise<void> {
 }
 
 main().catch(console.error);
+
